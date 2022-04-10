@@ -1,0 +1,276 @@
+@import './fonts';
+@import './colors';
+@import './mixin';
+body{
+    background:rgb(240, 238, 238);
+    @import './navigation';
+
+    .banner-container-1 {grid-area: banner-container-1;}
+    .carousel-container {grid-area: slideshow-container;}
+    .news-container {grid-area: news-container;}
+    .sports-container {grid-area: sports-container;}
+    .sidebar-container {grid-area: sidebar-container;}
+    .banner-container-2 {grid-area: banner-container-2;}
+    .social-media {grid-area: social-media;}
+    .business-container {grid-area: business-container;}
+    .kenazTV {grid-area: kenazTV;}
+    .banner-container-3 {grid-area: banner-container-3;}
+    .banner-container-4 {grid-area: banner-container-4;}
+    .news-container-2 {grid-area: news-container-2;}
+    .editorials-container {grid-area: editorials-container;}
+    .local-news-container {grid-area: local-news-container;}
+    .facebook {grid-area: facebook;}
+    .banner-container-5 {grid-area: banner-container-5;}
+    .carousel-container-2{grid-area: carousel-container-2;}
+    //.slideshow-container-2 {grid-area: slideshow-container-2;}
+    .grid-container{
+        
+        margin-left: calc(50% - 471px);
+        margin-right: calc(50% - 471px);
+    
+        display: grid;
+        grid-template-areas: 
+            'banner-container-1 banner-container-1 banner-container-1'
+            'slideshow-container slideshow-container slideshow-container'
+            'news-container news-container sidebar-container'
+            'sports-container sports-container sidebar-container'
+            'banner-container-2 banner-container-2 social-media'
+            'business-container business-container kenazTV'
+            'banner-container-3 banner-container-3 kenazTV'
+            'news-container-2 news-container-2 banner-container-4'
+            'editorials-container local-news-container facebook'
+            'banner-container-5 banner-container-5 banner-container-5'
+            
+            'carousel-container-2 carousel-container-2 carousel-container-2'
+        ;
+        grid-gap:17px;
+        background: inherit;
+        padding-top: 118px;
+
+        .banner-container-1{
+            width: 940px;
+            height: 120px;
+            background-color: $white;
+            
+            text-align: center;
+            font-family: $varelaRound;
+    
+            font-size: 15px;
+            text-decoration: none;
+            font-style: normal;
+            color: #999999;
+        }
+        .container{
+            width: 100%;
+            margin: auto;
+
+            overflow: hidden;
+            position: relative;
+
+            .editorials-container{
+                display: flex;
+            }
+            
+        }
+
+        .carousel-container{
+            width: 100%;
+            margin: auto;
+            
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+          
+            .carousel-slide{
+              display: flex;
+              width: 100%;
+              height: 425px;
+            }
+            #prev{
+              position: absolute;
+              top: 50%;
+              z-index: 10;
+              left:5%;
+              font-size: 30px;
+              opacity: 0.8;
+              width: 300px;
+              color: white;
+              
+            }
+            #next{
+              position: absolute;
+              top: 50%;
+              z-index: 1;
+              right:-23%;
+              font-size: 30px;
+              opacity: 0.8;
+              width: 300px;
+              color: white;
+            }
+          }
+          .carousel-container-2{
+            width: 100%;
+            margin: auto;
+            z-index: 1;
+            
+            overflow: hidden;
+            position: relative;
+            
+          
+            .carousel-slide-2{
+              display: flex;
+              width: 100%;
+              height: 425px;
+            }
+            #prev-2{
+              position: absolute;
+              top: 50%;
+              z-index: 10;
+              left:5%;
+              font-size: 30px;
+              opacity: 0.8;
+              width: 300px;
+              color: white;
+            }
+            #next-2{
+              position: absolute;
+              top: 50%;
+              z-index: 10;
+              right:-23%;
+              font-size: 30px;
+              opacity: 0.8;
+              width: 300px;
+              color: white;
+            }
+        }
+
+
+        .news-container{
+            @include posts;
+            width: fit-content;
+            border-left-width:13px;
+            border-left-style: solid;
+            border-left-color: #3677B5;
+        }
+        .sports-container{
+            @include posts;
+            width: fit-content;
+            border-left-width:13px;
+            border-left-style: solid;
+            border-left-color: #84C14F; 
+        }
+        .sidebar-container{
+            background: #4D4382;
+            width: 303px;
+            @import './sidebar';
+        }
+        
+        .sidebar-container > .sidebarPosts{
+            padding: 35px 0px 24px 0px;
+            padding-left: 32px;
+            padding-right: 32px;
+            border-bottom: solid 1px;
+        }
+        
+        .banner-container-2{
+            width: 620px;
+            height: 120px;
+            background-color: $white;
+            
+            text-align: center;
+            font-family: $varelaRound;
+    
+            font-size: 15px;
+            text-decoration: none;
+            font-style: normal;
+            color: #999999;
+        }
+
+        @import './socialMedia';
+
+        .business-container{
+            margin-top:-87px;
+            @include posts;
+            width: fit-content;
+            border-left-width:13px;
+            border-left-style: solid;
+            border-left-color: #EE6151;
+        }
+
+        @import './kenazTV';
+
+        .banner-container-3{
+            width: 620px;
+            height: 120px;
+            background-color: $white;
+            
+            text-align: center;
+            font-family: $varelaRound;
+    
+            font-size: 15px;
+            text-decoration: none;
+            font-style: normal;
+            color: #999999;
+        }   
+
+        .banner-container-4{
+            margin-top: -57px;
+
+            background-color:#DDDDDD;
+            width: 261px;
+            height:129px;
+
+            .small-banner-1 {grid-area:small-banner-1;}
+            .small-banner-2{grid-area: small-banner-2;}
+
+            padding: 19px 21px 19px 21px;
+            display: grid;
+            grid-template-areas:
+                'small-banner-1 small-banner-2'
+                ;
+            grid-gap:17px;
+
+            .small-banner-1,.small-banner-2{
+                background-color: white;
+                font-size: 14px;
+                color:#797373;
+                text-align:center;
+                font-family: 'Varela Round';
+            }
+        }
+        .news-container-2{
+            @include posts;
+            width: fit-content;
+            border-left-width:13px;
+            border-left-style: solid;
+            border-left-color: #FCC44D;
+        }
+        .editorials-container,.local-news-container{
+            @include post-2; 
+        }
+
+        .facebook{
+            margin-top: -213px;
+            width: 303px;
+            height: 556px;
+            background-color: white;
+        }
+        .banner-container-5{
+            width: 940px;
+            height: 120px;
+            background-color: $white;
+            
+            text-align: center;
+            font-family: $varelaRound;
+    
+            font-size: 15px;
+            text-decoration: none;
+            font-style: normal;
+            color: #999999;
+        }
+        
+    }
+
+   @import './footer';
+
+}

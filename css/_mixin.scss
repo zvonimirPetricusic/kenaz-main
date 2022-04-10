@@ -1,0 +1,141 @@
+@mixin posts {
+            
+            background: #FFFFFF;
+            color: #363F48;
+            font-family: 'Bitter';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+
+            .first-post,.second-post,.third-post{
+             
+             width: 170px;
+             position: relative;
+            }
+            .first-post {grid-area: first;}
+            .second-post {grid-area: second;}
+            .third-post {grid-area: third;}
+            .see-all {grid-area: see-all;}
+            padding: 15px 31px 34px 31px;
+            display: grid;
+            grid-template-areas:
+                'naslov naslov see-all' 
+                'first second third' 
+            ;
+            grid-gap:17px;
+            padding-top: 20px;
+            .postPictures{
+                padding-top:20px;
+            }
+            .paragraph{
+                font-family: 'Bitter';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                width: 169px;
+                padding-top: 6px;
+            }
+            .date{
+                
+                font-family: 'Varela Round';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                display: flex;
+                align-items: center;
+                color: #666666;
+                margin-bottom: 5px;
+
+                
+                .views{
+                    display: inline-block;
+                    padding-left: 57px;
+                }
+    
+            }
+            .see-all{
+                display: inline-block;
+                font-family: 'Varela Round';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+
+                color: #3677B5;
+
+                padding-left: 127px;
+            }
+            
+}
+@mixin post-2 {
+            width: 226px;
+            border-left-width:13px;
+            border-left-style: solid;
+            border-left-color: #A99765; 
+
+
+            background: #FFFFFF;
+            color: #363F48;
+            font-family: 'Bitter';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+
+            .first-post{
+             
+             width: 170px;
+             position: relative;
+            }
+            padding: 15px 31px 34px 31px;
+            
+
+            padding-top: 20px;
+            .postPictures{
+                padding-top:20px;
+                width: 230px;
+            }
+            .paragraph{
+                font-family: 'Bitter';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                width: 230px;
+                padding-top: 6px;
+            }
+            .date{
+                
+                font-family: 'Varela Round';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                display: flex;
+                align-items: center;
+                color: #666666;
+                margin-bottom: 5px;
+
+                
+                .views{
+                    display: inline-block;
+                    padding-left: 114px;
+                }
+    
+            }
+            .see-all{
+                display: inline-block;
+                font-family: 'Varela Round';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+
+                color: #3677B5;
+
+                padding-left: 127px;
+            }
+}

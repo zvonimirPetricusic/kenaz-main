@@ -1,0 +1,54 @@
+
+            .sidebarNavigation{
+                padding: 18px 32px 18px 0px;
+                font-family: 'Varela Round';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+    
+                //height: 53px;
+                
+                background: #4e4363;
+                border-bottom: solid 1px;
+                #top,#comments{
+                    padding-left: 20px;
+                }
+                #popular{
+                    padding-left: 31px;
+                }
+                a{
+                    
+                    color: white;
+                    //margin: 18px 0px 0px 0px;
+                    &:hover{
+                        color: #FCC44D;
+                    }
+                }
+            }
+            .sidebarPosts{
+                //padding: 15px 31px 34px 31px;
+                display: grid;
+                grid-template-areas:
+                    'sidebarParagraph sidebarPicture' 
+                ;
+                grid-gap: 5px;
+                &:hover{
+                    background-color: #4e4363;
+                }
+                .sidebarParagraph{
+                    font-family: 'Bitter';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 18px;
+                    //width: 169px;
+                    padding-top: 6px;
+                    color:#ffffff;
+                }
+                .sidebarPicture{
+                    border: 2px solid white;
+                }
+                .sidebarParagraph {grid-area: sidebarParagraph;}
+                .sidebarPicture {grid-area: sidebarPicture;}
+            }

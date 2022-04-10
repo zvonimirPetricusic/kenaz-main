@@ -1,0 +1,296 @@
+.footer-container{
+    width: 100%;
+    height: 982px;
+    background-color: #252525;
+    bottom:  0;
+    left: 0;
+    .footer-content-container{
+        margin-left: calc(50% - 471px);
+        margin-right: calc(50% - 471px);
+        padding-top: 50px;
+        
+        display: grid;
+
+        grid-gap:17px;
+        background: inherit;
+
+        .first{grid-area: first}
+        .second{grid-area: second}
+        .third{grid-area: third}
+        .fourth{grid-area: fourth}
+        .fifth{grid-area: fifth}
+        .sixth{grid-area: sixth}
+        
+        grid-template-areas: 
+            'first second third'
+            'fourth fifth sixth'
+        ;
+        .first{
+            width:303px;
+            .logo-container{
+                display: flex;
+                flex-direction: row;
+                .logo{
+                    
+                    .logo-arrow{
+                        width: 28px;
+                        height: 43px;
+                    }
+                }
+                .logo-text{
+                    font-family: 'Bitter';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 29.623px;
+                    line-height: 52px;
+                    /* identical to box height, or 175% */
+                    color: #45B0E3;
+                    padding-left: 18px;
+                }
+               
+            }
+
+            .some-paragraph{
+                width:303px;
+                .logo-paragraph{
+                    padding-top: 21.78px;
+                    font-family: 'Bitter';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #666666;
+                }
+            }
+            .so-me{
+                margin-top: 23px;
+                img{
+                    margin-left: 6px;
+                    &:hover{
+                        background-color: white;
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+
+        }
+        .second{
+            width:303px;
+            .title{
+                font-family: 'Bitter';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+                color: #CCCCCC;
+                margin-top: 18px;
+            }
+            .some-paragraph{
+                width:303px;
+                .logo-paragraph{
+                    padding-top: 25px;
+                    font-family: 'Bitter';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #666666;
+                }
+            }
+            .subscribe{
+                padding-top: 25px;
+                display: flex;
+                .subscribe-input{
+                    width: 193px;
+                    height: 38px;
+                    left: 0px;
+                    top: 116px;
+                    background: #333333;
+
+                    font-family: 'Varela Round';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #999999;
+
+                    padding-top: 15px;
+                    padding-left:21px;
+                }
+                .subscribeBtn{
+                    
+                    width: 112px;
+                    height: 38px;
+                   
+                    font-family: 'Varela Round';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #999999;
+
+                    padding-top: 15px;
+                    padding-left:21px;
+
+                    background: #4D4382;
+                }
+            }
+        }
+        .third{
+            width:303px;
+            
+            .title{
+                font-family: 'Bitter';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+                color: #CCCCCC;
+                margin-top: 18px;
+            }
+            .widget-container{
+                .widget{
+                    margin-top: 25px;
+                    display: flex;
+                    padding-top: 4px;
+                    padding-left: 13px;
+                    
+                    p{
+                        width: 83px;
+                        height: 24px;
+                        background: #333333;
+                        font-family: 'Varela Round';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 20px;
+                        padding-left:13x;
+                        color: #8a5e5e;
+                    }
+                }
+            }
+            
+        }
+        .fourth,.fifth{
+            width: 303px;
+            margin-top:69px;
+            .title{
+                font-family: 'Bitter';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+                color: #CCCCCC;
+                margin-top: 18px;
+            }
+            .first-post{
+                
+                margin-top: 25px;
+                margin-bottom: 67px;
+                
+                .post-container{
+                    display:flex;
+                    border-bottom: solid 1px #666666;;
+                    padding-bottom: 41px;
+                    margin-top:20px;
+                }
+                #last{
+                    border-bottom: none;
+                }
+               
+                .post{
+                    img{
+                        width: 70px; 
+                        height: 70px;
+                        border: solid 1px white;
+                    }
+                }
+                .paragraph{
+                    
+                    .date{
+                        font-family: 'Varela Round';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 14px;
+                        display: flex;
+                        align-items: center;
+                        color: #666666;
+                        margin-bottom: 5px;
+                        .views{
+                            display: inline-block;
+                            padding-left: 115px;
+                        }
+                    }
+                    font-family: 'Bitter';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 18px;
+                    //width: 169px;
+                    padding-top: 6px;
+
+                    color:#CCCCCC;
+                }
+            }
+        }
+        .fifth{
+            width: 303px;
+            margin-top:69px;
+            .title{
+                font-family: 'Bitter';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+                color: #CCCCCC;
+                margin-top: 18px;
+            }
+        }
+        .sixth{
+            width: 303px;
+            margin-top:69px;
+            .title{
+                font-family: 'Bitter';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+                color: #CCCCCC;
+                margin-top: 18px;
+            }
+            .twitter-feed-container{
+                margin-top: 23px;
+                .data{
+                    a{
+                        font-family: 'Bitter';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #666666;
+                        text-decoration: none;
+                    }
+                    .twitter-paragraph{
+                        margin-top: 10.5px;
+                        font-family: 'Varela Round';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 13px;
+                        line-height: 18px;
+
+                        color: #CCCCCC;
+
+                        margin-bottom: 42.5px;
+                    }
+                }
+                
+            }
+        }
+
+        
+        
+    }
+    
+}
